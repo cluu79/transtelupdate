@@ -68,15 +68,21 @@ body {
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 759px) {
   #showcase {
     min-height: 500px;
   }
   #showcase h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
+  }
+  #showcase .lead {
+    font-size: 1rem;
   }
   .mb-resp {
     margin-bottom: 1rem;
+  }
+  .info-header {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

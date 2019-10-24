@@ -68,14 +68,23 @@ body{
 
 
 // Media Queries
-@media(max-width:768px){
+@media(max-width:759px){
   #showcase{
     min-height: 500px;
     h1{
-      font-size: 4rem;
+      font-size: 3.5rem;
+    }
+    .lead{
+      font-size: 1rem;
     }
   }
   .mb-resp{
     margin-bottom: 1rem;
   }
+
+  .info-header{
+    width: 100%;
+  }
+  
 }
+// @media(max-width:755px){}
