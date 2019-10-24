@@ -45,6 +45,24 @@ body{
   border-bottom: 1px #ddd solid;
 }
 
+#managers{
+  img{
+    margin-top: -50px;
+  }
+  .card{
+    transition: all .2s ease-in-out;
+  }
+  .card:hover{
+    background: $primary-color;
+    color: #fff;
+    transform: scale(1.1);
+
+  }
+  .fab{
+    color: #fff;
+  }
+}
+
 
 // Media Queries
 @media(max-width:768px){
