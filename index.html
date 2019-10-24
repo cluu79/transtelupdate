@@ -13,9 +13,9 @@
   <title>Trans-Tel</title>
 </head>
 
-<body>
+<body id="home" data-spy="scroll" data-target="#main-nav">
   <!-- NAVBAR HERE -->
-  <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top py-4" id="main-nav">
     <div class="container">
       <a href="#home" class="navbar-brand">
         <img src="/img/TTC LOGO.jpg" width="" height="50" alt="">
@@ -418,16 +418,33 @@
             <div class="input-group input-group-lg mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text">
-                   <i class="fa fa-user" ></i>
+                   <i class="fas fa-user" ></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="email">
+            </div>
+            <div class="input-group input-group-lg mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-envelope"></i>
                 </span>
               </div>
               <input type="text" class="form-control" placeholder="NAME">
             </div>
+            <input type="submit" value="Submit" class="btn btn-primary btn-block btn-lg">
           </form>
         </div>
       </div>
     </div>
   </section>
+
+  <footer id="main-footer" class="py-5 bg-primary text-white">
+    <div class="container">
+      <div class="row text-center">
+        
+      </div>
+    </div>
+  </footer>
 
 
   
@@ -445,6 +462,21 @@
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
+
+    $('body').scrollspy({target:'#main-nav'});
+
+    $("#main-nav a").on('click', function(event){
+      if(this.hash !==""){
+        event.preventDefault();
+        const hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
   </script>
 </body>
 
