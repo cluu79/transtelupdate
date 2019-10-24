@@ -29,4 +29,30 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.btn-newsletter {
+  background-color: #8132a6;
+}
+
+.btn-newsletter:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px #ddd solid;
+}
+
+@media (max-width: 768px) {
+  #showcase {
+    min-height: 500px;
+  }
+  #showcase h1 {
+    font-size: 4rem;
+  }
+  .mb-resp {
+    margin-bottom: 1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
