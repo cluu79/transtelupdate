@@ -68,6 +68,11 @@ body {
   color: #fff;
 }
 
+#main-footer h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 @media (max-width: 759px) {
   #showcase {
     min-height: 500px;
